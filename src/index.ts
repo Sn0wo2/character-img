@@ -1,5 +1,6 @@
 import { getImageHandler } from './handler/image';
 import { corsMiddleware } from './middleware/cors';
+import { noCacheMiddleware } from './middleware/no-cache';
 
 type Middleware = (
 	request: Request,
@@ -33,6 +34,7 @@ export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
 		return compose(
 			corsMiddleware,
+			noCacheMiddleware,
 			getImageHandler
 		)(request);
 	}
