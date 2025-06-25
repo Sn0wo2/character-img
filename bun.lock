@@ -4,7 +4,7 @@
     "": {
       "name": "character-img",
       "devDependencies": {
-        "@cloudflare/vitest-pool-workers": "^0.8.43",
+        "@cloudflare/vitest-pool-workers": "^0.8.46",
         "vitest": "~3.2.4",
         "wrangler": "^4.20.5",
       },
@@ -15,7 +15,7 @@
 
     "@cloudflare/unenv-preset": ["@cloudflare/unenv-preset@2.3.3", "", { "peerDependencies": { "unenv": "2.0.0-rc.17", "workerd": "^1.20250508.0" } }, "sha512-/M3MEcj3V2WHIRSW1eAQBPRJ6JnGQHc6JKMAPLkDb7pLs3m6X9ES/+K3ceGqxI6TKeF32AWAi7ls0AYzVxCP0A=="],
 
-    "@cloudflare/vitest-pool-workers": ["@cloudflare/vitest-pool-workers@0.8.43", "", { "dependencies": { "birpc": "0.2.14", "cjs-module-lexer": "^1.2.3", "devalue": "^4.3.0", "miniflare": "4.20250617.3", "semver": "^7.7.1", "wrangler": "4.20.5", "zod": "^3.22.3" }, "peerDependencies": { "@vitest/runner": "2.0.x - 3.2.x", "@vitest/snapshot": "2.0.x - 3.2.x", "vitest": "2.0.x - 3.2.x" } }, "sha512-Jh/jBgXyTKHb75hUpvDb6IbamG48CKEavXRUuynQw6s34YGnxcY5zorzGoW46FJzgG+F8zUxvwMurlQFxl5wXQ=="],
+    "@cloudflare/vitest-pool-workers": ["@cloudflare/vitest-pool-workers@0.8.46", "", { "dependencies": { "birpc": "0.2.14", "cjs-module-lexer": "^1.2.3", "devalue": "^4.3.0", "miniflare": "4.20250617.4", "semver": "^7.7.1", "wrangler": "4.21.2", "zod": "^3.22.3" }, "peerDependencies": { "@vitest/runner": "2.0.x - 3.2.x", "@vitest/snapshot": "2.0.x - 3.2.x", "vitest": "2.0.x - 3.2.x" } }, "sha512-FMwKPxUmbKZ6nh9ZaHSYLwxnceWXmMz0qWiuFa2Ewp8QJCjNTWyL+lkIDZ9Dq3JrX1bhlNI2bM4yMnN8JOt5qg=="],
 
     "@cloudflare/workerd-darwin-64": ["@cloudflare/workerd-darwin-64@1.20250617.0", "", { "os": "darwin", "cpu": "x64" }, "sha512-toG8JUKVLIks4oOJLe9FeuixE84pDpMZ32ip7mCpE7JaFc5BqGFvevk0YC/db3T71AQlialjRwioH3jS/dzItA=="],
 
@@ -259,7 +259,7 @@
 
     "mime": ["mime@3.0.0", "", { "bin": "cli.js" }, "sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A=="],
 
-    "miniflare": ["miniflare@4.20250617.3", "", { "dependencies": { "@cspotcode/source-map-support": "0.8.1", "acorn": "8.14.0", "acorn-walk": "8.3.2", "exit-hook": "2.2.1", "glob-to-regexp": "0.4.1", "sharp": "^0.33.5", "stoppable": "1.1.0", "undici": "^5.28.5", "workerd": "1.20250617.0", "ws": "8.18.0", "youch": "3.3.4", "zod": "3.22.3" }, "bin": { "miniflare": "bootstrap.js" } }, "sha512-j+LZycT11UdlVeNdaqD0XdNnYnqAL+wXmboz+tNPFgTq6zhD489Ujj3BfSDyEHDCA9UFBLbkc5ByGWBh+pYZ5Q=="],
+    "miniflare": ["miniflare@4.20250617.4", "", { "dependencies": { "@cspotcode/source-map-support": "0.8.1", "acorn": "8.14.0", "acorn-walk": "8.3.2", "exit-hook": "2.2.1", "glob-to-regexp": "0.4.1", "sharp": "^0.33.5", "stoppable": "1.1.0", "undici": "^5.28.5", "workerd": "1.20250617.0", "ws": "8.18.0", "youch": "3.3.4", "zod": "3.22.3" }, "bin": { "miniflare": "bootstrap.js" } }, "sha512-IAoApFKxOJlaaFkym5ETstVX3qWzVt3xyqCDj6vSSTgEH3zxZJ5417jZGg8iQfMHosKCcQH1doPPqqnOZm/yrw=="],
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 
@@ -345,9 +345,13 @@
 
     "zod": ["zod@3.25.67", "", {}, "sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw=="],
 
+    "@cloudflare/vitest-pool-workers/wrangler": ["wrangler@4.21.2", "", { "dependencies": { "@cloudflare/kv-asset-handler": "0.4.0", "@cloudflare/unenv-preset": "2.3.3", "blake3-wasm": "2.1.5", "esbuild": "0.25.4", "miniflare": "4.20250617.4", "path-to-regexp": "6.3.0", "unenv": "2.0.0-rc.17", "workerd": "1.20250617.0" }, "optionalDependencies": { "fsevents": "~2.3.2" }, "peerDependencies": { "@cloudflare/workers-types": "^4.20250617.0" }, "optionalPeers": ["@cloudflare/workers-types"], "bin": { "wrangler": "bin/wrangler.js", "wrangler2": "bin/wrangler.js" } }, "sha512-POC8gGIAsJIYISxVe/oWIjSNwCqfaHMcDPzo6zuGTGvqYC33UM5WI82nULse1bNpXBC0L0XpqtHysW3sDqa8DQ=="],
+
     "miniflare/zod": ["zod@3.22.3", "", {}, "sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug=="],
 
     "vite/esbuild": ["esbuild@0.25.5", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.25.5", "@esbuild/android-arm": "0.25.5", "@esbuild/android-arm64": "0.25.5", "@esbuild/android-x64": "0.25.5", "@esbuild/darwin-arm64": "0.25.5", "@esbuild/darwin-x64": "0.25.5", "@esbuild/freebsd-arm64": "0.25.5", "@esbuild/freebsd-x64": "0.25.5", "@esbuild/linux-arm": "0.25.5", "@esbuild/linux-arm64": "0.25.5", "@esbuild/linux-ia32": "0.25.5", "@esbuild/linux-loong64": "0.25.5", "@esbuild/linux-mips64el": "0.25.5", "@esbuild/linux-ppc64": "0.25.5", "@esbuild/linux-riscv64": "0.25.5", "@esbuild/linux-s390x": "0.25.5", "@esbuild/linux-x64": "0.25.5", "@esbuild/netbsd-arm64": "0.25.5", "@esbuild/netbsd-x64": "0.25.5", "@esbuild/openbsd-arm64": "0.25.5", "@esbuild/openbsd-x64": "0.25.5", "@esbuild/sunos-x64": "0.25.5", "@esbuild/win32-arm64": "0.25.5", "@esbuild/win32-ia32": "0.25.5", "@esbuild/win32-x64": "0.25.5" }, "bin": "bin/esbuild" }, "sha512-P8OtKZRv/5J5hhz0cUAdu/cLuPIKXpQl1R9pZtvmHWQvrAUVd0UNIPT4IB4W3rNOqVO0rlqHmCIbSwxh/c9yUQ=="],
+
+    "wrangler/miniflare": ["miniflare@4.20250617.3", "", { "dependencies": { "@cspotcode/source-map-support": "0.8.1", "acorn": "8.14.0", "acorn-walk": "8.3.2", "exit-hook": "2.2.1", "glob-to-regexp": "0.4.1", "sharp": "^0.33.5", "stoppable": "1.1.0", "undici": "^5.28.5", "workerd": "1.20250617.0", "ws": "8.18.0", "youch": "3.3.4", "zod": "3.22.3" }, "bin": { "miniflare": "bootstrap.js" } }, "sha512-j+LZycT11UdlVeNdaqD0XdNnYnqAL+wXmboz+tNPFgTq6zhD489Ujj3BfSDyEHDCA9UFBLbkc5ByGWBh+pYZ5Q=="],
 
     "vite/esbuild/@esbuild/aix-ppc64": ["@esbuild/aix-ppc64@0.25.5", "", { "os": "aix", "cpu": "ppc64" }, "sha512-9o3TMmpmftaCMepOdA5k/yDw8SfInyzWWTjYTFCX3kPSDJMROQTb8jg+h9Cnwnmm1vOzvxN7gIfB5V2ewpjtGA=="],
 
@@ -398,5 +402,7 @@
     "vite/esbuild/@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.25.5", "", { "os": "win32", "cpu": "ia32" }, "sha512-onOJ02pqs9h1iMJ1PQphR+VZv8qBMQ77Klcsqv9CNW2w6yLqoURLcgERAIurY6QE63bbLuqgP9ATqajFLK5AMQ=="],
 
     "vite/esbuild/@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.5", "", { "os": "win32", "cpu": "x64" }, "sha512-TXv6YnJ8ZMVdX+SXWVBo/0p8LTcrUYngpWjvm91TMjjBQii7Oz11Lw5lbDV5Y0TzuhSJHwiH4hEtC1I42mMS0g=="],
+
+    "wrangler/miniflare/zod": ["zod@3.22.3", "", {}, "sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug=="],
   }
 }
